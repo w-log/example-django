@@ -1,4 +1,12 @@
 [flake8]
+exclude =
+    .git,
+    __pycache__,
+    docs/source/conf.py,
+    old,
+    build,
+    dist
+
 extend-ignore:
   E203,  # whitespace before ':' (conflicts with Black)
   E231,  # Bad trailing comma (conflicts with Black)
